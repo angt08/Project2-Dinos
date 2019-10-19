@@ -3,7 +3,7 @@
 # TITLE : Angies Horror Gallery
  
  This will be a web app where the user will play games
- the purpose of this app is for horror movie fans to stop by and have a little fun.
+ the purpose of this app is for horror  fans to stop by and have a little fun.
  the first three game ideas are:
 
  ##text adventure game:
@@ -11,8 +11,9 @@
  player choose between 2 options.
 
  ##card matching game:
-Cards will be hard coded , As I plan to use horror movie characters. only a set of 12 to begin.
- or I'd also like to use match the gif, and use specific gifs to match.
+Cards will be hard coded, As I plan to use horror characters. only a set of 12 to begin.
+or I'd also like to use match the gif, and use specific gif_ids  to match.
+
 
 
  ##quizlet:
@@ -21,7 +22,7 @@ Cards will be hard coded , As I plan to use horror movie characters. only a set 
 
 
 post MVP:
- It would be really cool to add some games which are more interactive and actually allow the use of horror movie character sprites.
+ It would be really cool to add some games which are more interactive and actually allow the use of horror character sprites.
 
 would also love to add some sound effects when things are clicked and new pgs load.
 AAAAAAAAAAAAAAAAA!!!!!!
