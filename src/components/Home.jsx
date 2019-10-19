@@ -1,14 +1,14 @@
 import React from 'react';
 
-function Home() {
+function Home(props) {
   
   return (
     
     <div id="home-Pg">
       
-      <h1>Enter Here </h1>
-
-      <div id="enter-Link"></div>
+      <button id="enter-Link" onClick={props.TextGame}>
+        begin
+      </button>
 
     </div>
 
