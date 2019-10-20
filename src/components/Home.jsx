@@ -1,15 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import Button from './Button';
+import Header from './Header';
 
 function Home(props) {
   
   return (
     
     <div id="home-Pg">
-      
-      <button id="enter-Link" onClick={props.TextGame}>
-        begin
-      </button>
-
+    
+     <Header />
+     <Button />
+     
     </div>
 
   )

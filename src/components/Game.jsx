@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import GifWall from './GifWall';
 
 // let story =  //button choice
 //choiceOne='' will change on click of every button
@@ -6,12 +8,16 @@ import React from 'react'
 // I need a way to make it so that when the user click a button(choice) 
 //the div from 
 //choice disappears and new scene/prompt in story progresses
-export default function TextGame(props) {
-  
+
+
+
+ function Game(props) {
+
 
   return (
-
-    <div id="text-story">
+    
+    <div className="modal">
+  
       <h3>Here we'll begin  the game?</h3>
        {/* there has to be a way for me to render the next prompt/scene 
         as the user  clicks button and story progresses */}                              
@@ -45,9 +51,11 @@ export default function TextGame(props) {
       <p>This Banquet, looks delicious, no one’s around ...</p>
       <button name="eat">eat some apple pie</button>
       <button name="drink">drink this wine? from this sweet lookin chalice..</button>
-   </div>
+      
+    </div>
    
 
  )
- console.log('click')
-}
+
+ }
+export default Game;
