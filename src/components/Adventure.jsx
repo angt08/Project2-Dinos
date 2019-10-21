@@ -17,8 +17,8 @@ const Adventure = (props) => {
           <>Home</>
         </Link>
       </header>
-
-      {/* <Game /> */}
+      
+      <Game />
       <GifWall gifs={props.gifs} />
     </div>
   )

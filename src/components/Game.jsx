@@ -1,5 +1,5 @@
 import React from 'react';
-import Adventure from './Adventure';
+import StoryDiv from './StoryDiv';
 
 
 // let story =  //button choice
@@ -42,17 +42,17 @@ class Game extends React.Component {
        
       <div id="story-div">
         {this.state.gameStart ?
-          <Game prompt={this.state.prompt}
+          <StoryDiv prompt={this.state.prompt}
             choiceOne={this.state.choiceOne}
             choiceTwo={this.state.choiceTwo}
             nextPrompt={this.nextPrompt} /> :
           <div className="">
-            <button onClick={this.displayGame}>
-              ...
-                </button>
-            <p>
-              make good choices
-                </p>
+          <button onClick={this.displayGame}>
+          ...
+          </button>
+          <p>
+          make good choices
+          </p>
 
           </div>
         }
