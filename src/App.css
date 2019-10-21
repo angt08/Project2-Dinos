@@ -97,7 +97,7 @@ body{
     border: 3px solid #9b9608 ;
     color:#9b9608 ;
   }
-  #game-div{
+  #story-div{
     margin-left:25%;
     margin-Right:25%;
     margin-top:10%;
@@ -127,7 +127,8 @@ body{
     display: block;
     text-align: center;
     position: absolute;
-    visibility: hidden;
+
+    /* visibility: hidden; */
   }
   #gif-wall{
     display:grid;

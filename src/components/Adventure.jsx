@@ -13,11 +13,12 @@ const Adventure = (props) => {
     <div id="adventure">
 
      <header id="adventure-header">
-     <Link to='/'>
+        <Link to='/'>
           <>Home</>
-       </Link>
+        </Link>
       </header>
-      <Game />
+
+      {/* <Game /> */}
       <GifWall gifs={props.gifs} />
     </div>
   )
