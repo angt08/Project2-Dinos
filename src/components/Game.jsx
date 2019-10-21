@@ -16,7 +16,7 @@ class Game extends React.Component {
       prompt: 'You Wake in a strange room...',
       choiceOne: 'You stay?',
       choiceTwo: 'You walk out, explore the house...',
-      turn: 0,
+      counter :0
     }
   }
    displayGame = () => {
@@ -25,13 +25,38 @@ class Game extends React.Component {
     })
   }
       
-  nextPrompt = (choice) => {
+  promptOne = (choice) => {
     if (choice) {
       this.setState({
         prompt: `you wandered into the house, it's big!!!`,
         choiceOne: 'A hidden doorway, cool',
         choiceTwo: 'the kitchen, lets eat',
-        turn: this.state.turn + 1
+        counter: 3
+
+      })
+    }
+
+  }
+  promptTwo= (choice) => {
+    if (choice) {
+      this.setState({
+        prompt: `you wag!!!`,
+        choiceOne: 'cool',
+        choiceTwo: ' lets eat',
+        counter: 2
+
+      })
+    }
+
+  }
+  promptThree= (choice) => {
+    if (choice) {
+      this.setState({
+        prompt: `wababalooee!!!`,
+        choiceOne: 'oh',
+        choiceTwo: 'wack',
+        counter: 2
+
       })
     }
 
@@ -39,8 +64,7 @@ class Game extends React.Component {
 
 
 
-
-  
+  // hidden doorway choices
   render() {
         
     return (
@@ -51,7 +75,11 @@ class Game extends React.Component {
             prompt={this.state.prompt}
             choiceOne={this.state.choiceOne}
             choiceTwo={this.state.choiceTwo}
-            nextPrompt={this.nextPrompt} /> :
+            promptOne={this.promptOne} 
+            promptTwo={this.promptTwo}
+            promptThree={this.promptThree}
+          />
+          :
         
           <button onClick={this.displayGame}>
           </button>

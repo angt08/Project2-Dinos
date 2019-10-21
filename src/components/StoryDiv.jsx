@@ -4,7 +4,9 @@ import React  from 'react';
 
   function StoryDiv(props) {
   
-  return (
+    return (
+    
+
     <div id="story-div" className="story-container">
       <div className="screen">
         <p>
@@ -12,7 +14,7 @@ import React  from 'react';
        </p>
         <div className="choiceOne">
           <button onClick=
-            {() => {props.nextPrompt(props.choiceOne) }}>
+            {() => {props.promptOne(props.choiceOne) }}>
             <p>
             {props.choiceOne}
             </p>
@@ -21,16 +23,12 @@ import React  from 'react';
         
         <div className="choiceTwo">
         <button onClick=
-            {() => {props.nextPrompt(props.choiceTwo) }}>
+            {() => {props.promptTwo(props.choiceTwo) }}>
             <p>
             {props.choiceTwo}
             </p>
           </button>
-
         </div>
-
-
-
       </div>
      
     </div>
