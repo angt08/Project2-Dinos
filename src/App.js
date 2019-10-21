@@ -16,7 +16,7 @@ class App extends React.Component {
   this.state= {
     apiKey: "s30zlBX8MsUXIz2bLRUVC3NXmXujSoJj",
     gifs: [],
-    emotion: ['dark movies'] ,
+    emotion: ['black and white  horror films'] ,
     // oneGif:'UjYw9fdCEPwU8'
 //a set of emotions to loop through everytime user loads game pg
   }
