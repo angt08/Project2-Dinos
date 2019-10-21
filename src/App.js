@@ -1,12 +1,10 @@
 import React from 'react';
 import './App.css';
-import Game from './components/Game';
-import Header from './components/Header';
 import Home from './components/Home';
 import Footer from './components/Footer';
-import GifWall from './components/GifWall';
 import {Route } from 'react-router-dom';
 import { gifBackground } from './services/api-helper';
+import Adventure from './components/Adventure';
 // import { getOneGif } from './services/api-helper';
 
 
@@ -17,7 +15,7 @@ class App extends React.Component {
     apiKey: "s30zlBX8MsUXIz2bLRUVC3NXmXujSoJj",
     gifs: [],
     emotion: ['black and white  horror films'] ,
-    // oneGif:'UjYw9fdCEPwU8'
+  // oneGif:'UjYw9fdCEPwU8'
 //a set of emotions to loop through everytime user loads game pg
   }
 }
@@ -37,19 +35,13 @@ async componentDidMount() {
   render() {
     return (
       <div className="App"> 
-     
-    <Route exact path="/" component={Home} />   
-        
+       
+    <Route exact path="/" component={Home} />      
     <Route path="/adventure"
           render={() => (
-            < Game /> ,
-            <Header /> ,
-            <GifWall gifs={this.state.gifs} />
-          )} />
-         
-      
-      {/* <GifWall gifs={this.state.gifs} />  */}
-        
+          <Adventure gifs={this.state.gifs}/>
+          )} />     
+      {/* <GifWall gifs={this.state.gifs} />  */} 
       <Footer />
       </div>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 // let story =  //button choice
 //choiceOne='' will change on click of every button
 //story =''
@@ -12,11 +13,12 @@ import React from 'react';
   
        <div  id="game-div">
   
-       <h3>Here we'll begin  the game?</h3>
+       <h3> Choose a fate ..</h3>
+       <button name="play">Begin</button>
        {/* there has to be a way for me to render the next prompt/scene 
         as the user  clicks button and story progresses */}
-       <div className="modal">
-         
+       
+      <div className="modal">
       <p>You wake  in a strange room... </p>
       <button name="stay">Stay</button>
       <button name="walk out">Walk out explore the house..</button>
@@ -60,7 +62,7 @@ import React from 'react';
       {/* kitchen exploration */}
       <p>This Banquet, looks delicious, no one’s around ...</p>
       <button name="eat">eat some apple pie</button>
-      <button name="drink">drink this wine? from this sweet lookin chalice..
+      <button name="drink">drink this "wine"? from this sweet lookin chalice..
       </button>
          
        </div>
