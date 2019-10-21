@@ -5,9 +5,9 @@ function Button() {
   
 
   return (
-    <Link   to='/game'>
+    <Link   to='/adventure'>
     <button id="enter-Link">
-      enter here
+     Play
     </button>
    </Link>
   )

@@ -8,3 +8,11 @@ export const gifBackground = async (apiKey, emotion) => {
 
   return response.data.data;
 }
+
+
+// export const getOneGif = async (apiKey,gif_id) => {
+  
+//   const response = await axios(`api.giphy.com/v1/gifs/${apiKey}${gif_id}`)
+
+//   return response.data.data.gif_id;
+// }
