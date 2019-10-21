@@ -14,12 +14,12 @@ class Game extends React.Component {
     this.state = {
       gameStart: true,
       prompt: 'You Wake in a strange room...',
-      choiceOne: 'stay.',
-      choiceTwo: 'walk out, explore the house...',
+      choiceOne: 'You stay?',
+      choiceTwo: 'You walk out, explore the house...',
       turn: 0,
     }
   }
-  displayGame = () => {
+   displayGame = () => {
     this.setState({
       displayGame: true
     })
@@ -28,35 +28,43 @@ class Game extends React.Component {
   nextPrompt = (choice) => {
     if (choice) {
       this.setState({
-        prompt: `you wandered into the house, it's big`,
-        choiceOne: 'a hidden doorway, cool',
+        prompt: `you wandered into the house, it's big!!!`,
+        choiceOne: 'A hidden doorway, cool',
         choiceTwo: 'the kitchen, lets eat',
         turn: this.state.turn + 1
       })
     }
 
   }
+
+
+
+
+  
   render() {
         
     return (
        
-      <div id="story-div">
+      <div>
         {this.state.gameStart ?
-          <StoryDiv prompt={this.state.prompt}
+          <StoryDiv
+            prompt={this.state.prompt}
             choiceOne={this.state.choiceOne}
             choiceTwo={this.state.choiceTwo}
             nextPrompt={this.nextPrompt} /> :
-          <div className="">
+        
           <button onClick={this.displayGame}>
-          ...
           </button>
-          <p>
-          make good choices
-          </p>
+         
 
-          </div>
+         
         }
       </div>
+
+    // .........................
+      
+      
+      
     )
   }
 }
