@@ -1,38 +1,50 @@
-import React  from 'react';
+import React from 'react';
 
 
 
-  function StoryDiv(props) {
-  
-    return (
-    
+function StoryDiv(props) {
+
+  return (
+
 
     <div id="story-div" className="story-container">
       <div className="screen">
         <p>
-          {props.prompt}
-       </p>
-        <div className="choiceOne">
+          {props.gameData.prompt}
+        </p>
+
+        {Object.keys(props.gameData).filter(option => option !== "prompt").map((option, index) => (
+          <div className="choiceOne" key={index} >
+
+            <button onClick={() => props.selectedPrompt(option)}>
+              <p>
+                {option}
+              </p>
+            </button>
+          </div>
+
+        ))}
+
+
+
+        {/* <div className="choiceTwo">
           <button onClick=
-            {() => {props.promptOne(props.choiceOne) }}>
+            {() => {
+              props.promptTwo(props.choiceTwo, `what's this,a hidden doorway..explore`, `yabadaba dooo`, `rooby doooby dooo`)
+            }}>
             <p>
-            {props.choiceOne}
+              {props.choiceTwo}
             </p>
           </button>
-        </div>
-        
-        <div className="choiceTwo">
-        <button onClick=
-            {() => {props.promptTwo(props.choiceTwo) }}>
-            <p>
-            {props.choiceTwo}
-            </p>
-          </button>
-        </div>
+        </div> */}
       </div>
-     
+
     </div>
+
+
+
+
   )
-  }
+}
 
 export default StoryDiv;

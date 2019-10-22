@@ -1,32 +1,46 @@
 body{
   max-width: 100%;
-  overflow-x: hidden;
-  margin:auto;
-  background-color: black;
- 
+  margin:0;
+  overflow-x:hidden;
   }
-  #header{
-  display:inline-block;
+
+  #home-header{
+  top:0;
+  display:fixed;
   opacity:.8;
   width:100%;
+  margin-bottom:300px;
   line-height: 150px;
   background-size: cover;
   background-color:#090B06;
   }
   #adventure-header{
-    display:sticky;
+    top:0;
+    display:inline-block;
     opacity:.8;
     width:100%;
-    line-height: 100px;
+    line-height:150px;
     background-size: cover;
     background-color:#090B06;
     }
+
   h1{
   font-size:35px;
   margin-bottom: -30px;
   font-family: 'Lacquer', sans-serif;
   text-align:center;
   color:#6EBE44;
+  }
+
+  #home-Pg{
+    display:inline-block;
+    margin-top: 200px;
+    margin-left:auto;
+    margin-right:auto;
+    width:100%;
+    background-image: url('https://media.giphy.com/media/31ZhdHbVzsK5RlHXSr/giphy.gif');
+    background-size: cover;
+    height:100vh;
   }
   
   .gallery-word{
@@ -48,24 +62,15 @@ body{
     text-decoration: none;
     color:rgb(126, 11, 11);
   }
+
   a:hover{
     color:#bac146;
     font-family: 'Lacquer', sans-serif; 
   }
-  #home-Pg{
-    display: inline-block;
-    margin-top: 200px;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-    background-image: url('https://media.giphy.com/media/31ZhdHbVzsK5RlHXSr/giphy.gif');
-    background-size: cover;
-    height:100vh;
-  }
+ 
   #adventure{
     margin-top:100px;
     width:100%;
-    height: 100vh;
   }
   button{
     font-family: 'Blinker', sans-serif;
@@ -82,7 +87,6 @@ body{
   #enter-Link{
     margin-left:20%;
     margin-right:40%;
-    margin-top:15%;
     width:80px;
     font-size:25px;
     color:#6EBE44;
@@ -135,6 +139,7 @@ body{
     text-align: center;
   }
   footer{
+    position: fixed;
     display: inline-block;
     background-color:#090B06;
     line-height:100px;
