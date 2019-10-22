@@ -1,7 +1,5 @@
 import React from 'react';
 import StoryDiv from './StoryDiv';
-
-
 // let story =  //button choice
 //choiceOne='' will change on click of every button
 //story =''
@@ -13,9 +11,10 @@ class Game extends React.Component {
     super(props);
     this.state = {
       gameStart: true,
-      prompt: 'You Wake and bake...',
-      choiceOne: 'You stay?',
-      choiceTwo: 'You walk out, explore the house...',
+
+      prompt: '',
+      choiceOne: '',
+      choiceTwo: '',
       counter: 0
     }
   }
@@ -35,18 +34,10 @@ class Game extends React.Component {
             prompt={this.state.prompt}
             gameData={this.props.gameData}
             selectedPrompt={this.props.selectedPrompt}
-            choiceOne={this.state.choiceOne}
-            choiceTwo={this.state.choiceTwo}
-            promptOne={this.promptOne}
-            promptTwo={this.promptTwo}
-
           />
           :
-
           <button onClick={this.displayGame}>
           </button>
-
-
 
         }
       </div>

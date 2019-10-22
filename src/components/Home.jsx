@@ -1,20 +1,16 @@
 import React from 'react';
-import Button from './Button';
 import Header from './Header';
+import Button from './Button';
 
 function Home(props) {
-  
+
   return (
-    
+
     <div id="home-Pg">
       <div id="home-header">
-     <Header />
+        <Header />
       </div>
-      
-      <div >
-     <Button />
-      </div>
-     
+      <Button/>
     </div>
 
   )

@@ -2,10 +2,12 @@ import React from 'react';
 import './App.css';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Button from './components/Button';
 import { Route } from 'react-router-dom';
 import { gifBackground } from './services/api-helper';
 import Adventure from './components/Adventure';
 import gameData from './resources/gamedata';
+import Header from './components/Header'
 
 // import { getOneGif } from './services/api-helper';
 
@@ -44,17 +46,20 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+      
+        <Route exact path="/" component={Home}/>
+        
 
-        <Route exact path="/" component={Home} />
-        <Route path="/adventure/"
-          render={() => (
-            <Adventure
-              gameData={this.state.gameData}
-              selectedPrompt={this.selectedPrompt}
-              gifs={this.state.gifs}
-            />
-          )} />
-        {/* <GifWall gifs={this.state.gifs} />  */}
+          <Route path="/adventure/"
+            render={() => (
+              <Adventure
+                gameData={this.state.gameData}
+                selectedPrompt={this.selectedPrompt}
+                gifs={this.state.gifs}
+              />
+            )} />
+        
+       
         <Footer />
 
       </div>

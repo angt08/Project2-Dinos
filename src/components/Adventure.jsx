@@ -17,7 +17,6 @@ const Adventure = (props) => {
           <>Home</>
         </Link>
       </header>
-
       <Game
         gameData={props.gameData}
         selectedPrompt={props.selectedPrompt}

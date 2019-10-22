@@ -1,16 +1,14 @@
 import React from 'react';
 
 
-const  Header=() =>{
- 
+const Header = () => {
+
   return (
     <div id="header">
       <h1 className="gallery-word">
         Angies' Horror Arcade
       </h1>
-    
-      
-     </div>
-)
+    </div>
+  )
 }
 export default Header;
