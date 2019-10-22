@@ -20,6 +20,7 @@ const Adventure = (props) => {
       <Game
         gameData={props.gameData}
         selectedPrompt={props.selectedPrompt}
+        endingGif={props.endingGif}
       />
       <GifWall gifs={props.gifs} />
 

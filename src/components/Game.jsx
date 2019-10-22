@@ -34,6 +34,7 @@ class Game extends React.Component {
             prompt={this.state.prompt}
             gameData={this.props.gameData}
             selectedPrompt={this.props.selectedPrompt}
+            endingGif={this.props.endingGif}
           />
           :
           <button onClick={this.displayGame}>

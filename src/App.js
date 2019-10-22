@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import Button from './components/Button';
 import { Route } from 'react-router-dom';
-import { gifBackground } from './services/api-helper';
+import { gifBackground, getOneGif } from './services/api-helper';
 import Adventure from './components/Adventure';
 import gameData from './resources/gamedata';
 import Header from './components/Header'
@@ -19,7 +19,8 @@ class App extends React.Component {
       gameData: gameData,
       apiKey: "s30zlBX8MsUXIz2bLRUVC3NXmXujSoJj",
       gifs: [],
-      emotion: ['black and white  horror films'],
+      emotion: ['black and white horror '],
+      endingGif: ''
       // oneGif:'UjYw9fdCEPwU8'
       //a set of emotions to loop through everytime user loads game pg
     }
@@ -36,30 +37,37 @@ class App extends React.Component {
     console.log(this.state)
   }
 
-  selectedPrompt = (option) => {
+  selectedPrompt = async (option) => {
     this.setState(prevState => ({
       gameData: prevState.gameData[option]
     }))
+    // if (this.state.gameData.prompt === "The nightman cometh, you shant be spared, Goodbye...") {
+    //   const response = await getOneGif(this.state.apiKey)
+    //   this.setState({
+    //       endingGif: response.images.orginal.url
+    //   })
+    // }
   }
 
 
   render() {
     return (
       <div className="App">
-      
-        <Route exact path="/" component={Home}/>
-        
 
-          <Route path="/adventure/"
-            render={() => (
-              <Adventure
-                gameData={this.state.gameData}
-                selectedPrompt={this.selectedPrompt}
-                gifs={this.state.gifs}
-              />
-            )} />
-        
-       
+        <Route exact path="/" component={Home} />
+
+
+        <Route path="/adventure/"
+          render={() => (
+            <Adventure
+              gameData={this.state.gameData}
+              selectedPrompt={this.selectedPrompt}
+              gifs={this.state.gifs}
+              endingGif={this.state.endingGif}
+            />
+          )} />
+
+
         <Footer />
 
       </div>

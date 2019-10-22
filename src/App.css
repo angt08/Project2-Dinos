@@ -62,9 +62,10 @@ body{
   }
   a{
     margin-left:20%;
+    font-size: 22px;
     font-family: 'Lacquer', sans-serif;    
     text-decoration: none;
-    color:rgb(126, 11, 11);
+    color:#6EBE44;
   }
 
   a:hover{
@@ -75,25 +76,27 @@ body{
   #adventure{
    overflow-y: hidden;
    overflow-x: hidden;
-    margin-top:100px;
-    width:100%;
+   margin-top:100px;
+   width:100%;
   }
   button{
     font-family: 'Blinker', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 4px;
     width:50%;
     background-color:#9b8a08;
     color:#090B06;
-    
+    margin-top:5px;
+    border: none;
 
   }
   button:hover{
+    
     background-color:#090B06;
     color:white;
   }
   #enter-Link{
-    margin-top:15%;
+    margin-top:14%;
     margin-left:18%;
     margin-right:40%;
     width:80px;
@@ -116,12 +119,14 @@ body{
   #story-div{
     margin-left:15%;
     margin-Right:0;
-    margin-top:20%;
+    margin-top:25%;
     opacity: .98;
     background-color:rgb(15, 58, 7);
+    box-shadow: 6px 5px rgb(7, 19, 1);
     color:white;
     z-index: 10;
-    font-size:18px;
+    font-size:20px;
+    padding:20px;
     font-family: 'Blinker', sans-serif;
     width:70%;
     display: block;
@@ -129,6 +134,7 @@ body{
     position: absolute;
   }
 
+ 
   #gif-wall{
     display:grid;
     grid-template-columns: 280px 280px 280px 280px 280px;
@@ -163,6 +169,25 @@ body{
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
 
+    *{
+       overflow-x:hidden;
+       margin:0;
+    }
+    #enter-link{
+      width:80px;
+    }
+    #home-Pg{
+      height:400px;
+      background-image: url(https://media.giphy.com/media/ddHnuEEbWGWFfnHW4O/giphy.gif);
+      /* background-image-size: ; */
+      height:85vh;
+      background-size: cover;
+    }
+    h1{
+    font-size:20px;
+    text-align:center;
+     margin-left:18%;
+    }
 }
 
 

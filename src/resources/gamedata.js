@@ -1,7 +1,7 @@
 const gameData = {
 
-  prompt: `You wake in a strange room, you look out the window it's
-   getting darkyou don't kno where you are..`,
+  prompt: `You wake in a strange room, you look out the window.,
+  it's getting dark yout there, you don't know where you are..`,
   "Stay in here?": {
     prompt: "The nightman cometh, you shant be spared, Goodbye...",
   },

@@ -24,6 +24,7 @@ function StoryDiv(props) {
           </div>
 
         ))}
+        {props.endingGif && <img src={props.endingGif}/>}
 
 
 

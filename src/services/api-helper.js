@@ -10,9 +10,10 @@ export const gifBackground = async (apiKey, emotion) => {
 }
 
 
-// export const getOneGif = async (apiKey,gif_id) => {
+export const getOneGif = async (apiKey) => {
   
 //   const response = await axios(`api.giphy.com/v1/gifs/${apiKey}${gif_id}`)
-
-//   return response.data.data.gif_id;
-// }
+  const response = await axios(`https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&limit=1`);
+  debugger;
+  return response.data.data;
+}
