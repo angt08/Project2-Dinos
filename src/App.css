@@ -88,13 +88,13 @@ body{
     color:#090B06;
     margin-top:5px;
     border: none;
-
   }
+
   button:hover{
-    
     background-color:#090B06;
     color:white;
   }
+  
   #enter-Link{
     margin-top:14%;
     margin-left:18%;
@@ -124,6 +124,7 @@ body{
     background-color:rgb(15, 58, 7);
     box-shadow: 6px 5px rgb(7, 19, 1);
     color:white;
+    height:300px;
     z-index: 10;
     font-size:20px;
     padding:20px;
@@ -161,8 +162,6 @@ body{
     width:100%;
   }
 
-
-
   /*    Media Qries                 */
   @media only screen 
   and (min-device-width: 375px) 
@@ -173,9 +172,7 @@ body{
        overflow-x:hidden;
        margin:0;
     }
-    #enter-link{
-      width:80px;
-    }
+    
     #home-Pg{
       height:400px;
       background-image: url(https://media.giphy.com/media/ddHnuEEbWGWFfnHW4O/giphy.gif);
