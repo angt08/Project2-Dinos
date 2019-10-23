@@ -28,13 +28,35 @@ body{
     }
 
   h1{
+ 
   font-size:35px;
   margin-bottom: -30px;
   font-family: 'Lacquer', sans-serif;
   text-align:center;
   color:#6EBE44;
   }
-
+  #enter-Link{
+    position: sticky;
+    margin-top:12%;
+    margin-left:18%;
+    margin-right:40%;
+    width:120px;
+    font-size:28px;
+    color:#6EBE44;
+    font-family:'Lacquer', sans-serif; 
+    text-align:center;
+    background-color:transparent;
+    
+    
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+  }
+  #enter-Link:hover{
+    background-color:#b5f9b5;
+    box-shadow: 0 0 10px 0 #9b9608 inset, 0 0 20px 2px #9b9608 ;
+    border: 3px solid #9b9608 ;
+    color:#9b9608 ;
+  }
 
    #home-Pg{
     background-image: url(https://media.giphy.com/media/31ZhdHbVzsK5RlHXSr/giphy.gif);
@@ -82,12 +104,14 @@ body{
   button{
     font-family: 'Blinker', sans-serif;
     font-size: 20px;
-    border-radius: 4px;
+    border-radius: px;
     width:50%;
     background-color:#9b8a08;
-    color:#090B06;
-    margin-top:5px;
+    box-shadow: 6px 5px rgb(9, 26, 0);
+    color:rgb(255, 255, 255);
+    margin-top:10px;
     border: none;
+    padding:5px 0 0 5px;
   }
 
   button:hover{
@@ -95,34 +119,14 @@ body{
     color:white;
   }
 
-  #enter-Link{
-    margin-top:14%;
-    margin-left:18%;
-    margin-right:40%;
-    width:80px;
-    font-size:25px;
-    color:#6EBE44;
-    font-family:'Lacquer', sans-serif; 
-    text-align:center;
-    background-color:transparent;
-    
-    
-    -webkit-transition: all .15s ease-in-out;
-    transition: all .15s ease-in-out;
-  }
-  #enter-Link:hover{
-    background-color:#b5f9b5;
-    box-shadow: 0 0 10px 0 #9b9608 inset, 0 0 20px 2px #9b9608 ;
-    border: 3px solid #9b9608 ;
-    color:#9b9608 ;
-  }
+
   #story-div{
     margin-left:15%;
     margin-Right:0;
     margin-top:25%;
     opacity: .98;
     background-color:rgb(15, 58, 7);
-    box-shadow: 6px 5px rgb(7, 19, 1);
+    box-shadow: 6px 5px rgb(9, 26, 0);
     color:white;
     height:300px;
     z-index: 10;
