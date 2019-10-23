@@ -26,7 +26,7 @@ class App extends React.Component {
     }
   }
   async componentDidMount() {
-
+   
     const gifs = await gifBackground(this.state.apiKey, this.state.emotion)
     // const  oneGif= await getOneGif (this.state.apiKey, this.state.gif_id)
     console.log(gifs)
@@ -38,6 +38,7 @@ class App extends React.Component {
   }
 
   selectedPrompt = async (option) => {
+   
     this.setState(prevState => ({
       gameData: prevState.gameData[option]
     }))

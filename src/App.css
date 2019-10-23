@@ -94,7 +94,7 @@ body{
     background-color:#090B06;
     color:white;
   }
-  
+
   #enter-Link{
     margin-top:14%;
     margin-left:18%;
@@ -162,7 +162,7 @@ body{
     width:100%;
   }
 
-  /*    Media Qries                 */
+  /*    Media Qries   */
   @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -176,22 +176,31 @@ body{
     #home-Pg{
       height:400px;
       background-image: url(https://media.giphy.com/media/ddHnuEEbWGWFfnHW4O/giphy.gif);
-      /* background-image-size: ; */
+      
       height:85vh;
       background-size: cover;
     }
-    h1{
-    font-size:20px;
+    header{
+    font-size:23px;
     text-align:center;
      margin-left:18%;
     }
+   
+    #story-div{
+      opacity: .98;
+
+      width:80%;
+      margin-left:5%;
+      margin-top:55%;
+    
+    }
+    button{
+      margin-top:5%;
+    }
+
+
+
+   
 }
 
 
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
-}
