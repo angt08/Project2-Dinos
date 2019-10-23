@@ -4,9 +4,10 @@ body{
   top:0;
   background-color:#090B06;
   /* overflow-x:hidden; */
-  /* overflow-y: hidden; */
+ 
   }
   #header{
+  display: inline-block;
   top:0;
   opacity:.9;
   width:100%;
@@ -148,6 +149,7 @@ body{
 
  
   #gif-wall{
+   
     display:grid;
     grid-template-columns: 280px 280px 280px 280px 280px;
     width:100%;

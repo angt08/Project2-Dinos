@@ -10,7 +10,7 @@ function StoryDiv(props) {
     <div id="story-div" className="story-container">
       <form>
         <button id="reset-button">
-        Reset
+          Reset
         </button>
       </form>
       <div className="screen">

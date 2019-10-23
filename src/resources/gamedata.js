@@ -17,12 +17,12 @@ const gameData = {
         prompt: "A banquet, sweet!",
       "Let's try this roast mutton": {
         prompt: "Does this  mutton taste funny to you?..",
-        "":null
+        
       },
 
       "Drink this wine,from this fine looking chalice": {
         prompt: " Hey man, I don't think that was wine..",
-        "":null
+        
       },
     },
 
@@ -40,9 +40,17 @@ const gameData = {
         prompt: "Running into the woods, classic ",
           "Drop to the ground ,ball up, begin to ugly cry silently...":  {
             prompt: "Wait,sshh, you hear whispering nearby..take a look",
-            "You see a figure in the distance frantically waving":null,
+            "There's a figure in the distance frantically waving..seee what it is..": {
+              prompt:" Nice! You army crawled your way to a scarecrow, cry into it while I continue writing the rest of this story...To be continued",
+            },
+            
+            "Stay where you are..keep ugly crying into the grass": {
+              prompt:"To be continued...maybe aliens take you?"
+            }
           },
-          "Run back to the house": null,
+          "Run back to the house": {
+            prompt:"Don't come into this house panting! The beast will hear you, gather yourself while I finish writing this ...To be Continued",
+          },
           
         },
         "Walk around the house, maybe there's a shed": { 
