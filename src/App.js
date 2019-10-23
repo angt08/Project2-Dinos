@@ -2,12 +2,10 @@ import React from 'react';
 import './App.css';
 import Home from './components/Home';
 import Footer from './components/Footer';
-import Button from './components/Button';
 import { Route } from 'react-router-dom';
 import { gifBackground, getOneGif } from './services/api-helper';
 import Adventure from './components/Adventure';
 import gameData from './resources/gamedata';
-import Header from './components/Header'
 
 // import { getOneGif } from './services/api-helper';
 
@@ -49,7 +47,7 @@ class App extends React.Component {
     //   })
     // }
   }
-
+  
 
   render() {
     return (
@@ -68,7 +66,7 @@ class App extends React.Component {
             />
           )} />
 
-
+       
         <Footer />
 
       </div>

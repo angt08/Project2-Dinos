@@ -8,7 +8,13 @@ function StoryDiv(props) {
 
 
     <div id="story-div" className="story-container">
+      <form>
+        <button id="reset-button">
+        Reset
+        </button>
+      </form>
       <div className="screen">
+     
         <p>
           {props.gameData.prompt}
         </p>
@@ -21,8 +27,8 @@ function StoryDiv(props) {
                 {option}
               </p>
             </button>
+            
           </div>
-
         ))}
         {props.endingGif && <img src={props.endingGif}/>}
 
