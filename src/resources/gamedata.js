@@ -6,7 +6,7 @@ const gameData = {
   You check yourself, you're not in pain, you're dressed for a formal event, what is going on...`,
   "Stay in this study ?": {
     
-    prompt: "The nightman cometh, you shant be spared, Goodbye...https://media.giphy.com/media/l3vRl01OIHUWCn7Jm/giphy.gif",
+    prompt: "The nightman cometh, you shant be spared, Goodbye...",
   },
 
   "Explore the house":{
