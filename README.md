@@ -26,4 +26,15 @@ post MVP:
 
 would also love to add some sound effects when things are clicked and new pgs load.
 AAAAAAAAAAAAAAAAA!!!!!!
+
+
+## Process and stretch goals
+ Making this game was fun and challenging, I really enjoyed  writing out the portion of my choose your adventrue story.
+
+  I encountered  issues coming up with a way to display the prompts and options in 1 div, and filtering through them as the story progressed. There are many different ways to figure this out, I had a lot of support and overall would probably remake this as a different version in another app.
+
+  My stretch goals for this site are to finish the adventure story and render gifs at the end of the prompts that lead you to death. I would like to add a back/previous button so the played can choose to go back and make other choices based on their outcomes.I also plan on adding more games to this ,as it's in the name ...it's an arcade, so I'd like to have a 'Match the Gif' game, a maze one, and so on.
+
+  definitely an awesome experience, learned a lot, and little things I overlooked in previous lessons finally stuck.
+
 # Project2-Dinos
