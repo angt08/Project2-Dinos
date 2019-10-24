@@ -15,6 +15,7 @@ const Adventure = (props) => {
       <header id="adventure-header">
         <Link to='/'>
           <>Home</>
+          
         </Link>
       </header>
       <Game

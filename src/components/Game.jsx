@@ -11,11 +11,6 @@ class Game extends React.Component {
     super(props);
     this.state = {
       gameStart: true,
-
-      prompt: '',
-      choiceOne: '',
-      choiceTwo: '',
-      counter: 0
     }
   }
   displayGame = () => {
@@ -34,7 +29,7 @@ class Game extends React.Component {
             prompt={this.state.prompt}
             gameData={this.props.gameData}
             selectedPrompt={this.props.selectedPrompt}
-            endingGif={this.props.endingGif}
+            endGame={this.props.endGame}
           />
           :
           <button onClick={this.displayGame}>

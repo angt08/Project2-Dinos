@@ -11,7 +11,7 @@ body{
   top:0;
   opacity:.9;
   width:100%;
-  
+  position: static;
   line-height: 150px;
   background-size: cover;
   background-color:rgb(8, 12, 1);
@@ -35,6 +35,10 @@ body{
   font-family: 'Lacquer', sans-serif;
   text-align:center;
   color:#6EBE44;
+
+
+ 
+    box-shadow: 0 0 1px 0 #9b9608 inset, 0 0 20px 12px #9b9608 ;
   }
   #enter-Link{
     position: sticky;
@@ -42,12 +46,16 @@ body{
     margin-left:18%;
     margin-right:40%;
     width:120px;
-    font-size:28px;
+    height:10px;
+    font-size:24px;
     color:#6EBE44;
     font-family:'Lacquer', sans-serif; 
     text-align:center;
     background-color:transparent;
     
+    -webkit-animation:flicker 2s infinite;
+    background-color:#b5f9b5;
+    box-shadow: 0 0 10px 0 #9b9608 inset, 0 0 20px 2px #9b9608 ;
     
     -webkit-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
@@ -57,13 +65,17 @@ body{
     box-shadow: 0 0 10px 0 #9b9608 inset, 0 0 20px 2px #9b9608 ;
     border: 3px solid #9b9608 ;
     color:#9b9608 ;
+    
   }
  #reset-button{
    width:10%;
+   color: rgb(9, 26, 0);
    font-size:18px;
    text-align: center;
    display:flex;
-  align-content: flex-start;
+   align-content: flex-start;
+
+  
  }
    #home-Pg{
     background-image: url(https://media.giphy.com/media/31ZhdHbVzsK5RlHXSr/giphy.gif);
@@ -77,6 +89,7 @@ body{
   
   .gallery-word{
   -webkit-animation:flicker 2s infinite;
+  color:#b5f9b5;
   margin: 0;
   }
   
@@ -95,6 +108,8 @@ body{
     font-family: 'Lacquer', sans-serif;    
     text-decoration: none;
     color:#6EBE44;
+
+  
   }
 
   a:hover{
@@ -193,7 +208,6 @@ body{
       background-size: cover;
     }
     header{
-    
     font-size:23px;
     text-align:center;
      margin-left:18%;
@@ -202,18 +216,27 @@ body{
    font-size:25px;
    }
     a{
-      
       margin-top:40%;
       font-size:30px;
       }
     #story-div{
       opacity: .98;
       width:80%;
+      height:380px;
       margin-left:5%;
       margin-top:55%;
+    }
+    p{
+      margin-top:10px;
+    }
+    #reset-button{
+      width:18%;
+      font-size:18px;
+      text-align: center;
+     margin-bottom:5px;
+
     
     }
-   
 
 
 

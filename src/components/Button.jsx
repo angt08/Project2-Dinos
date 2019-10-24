@@ -15,7 +15,7 @@ class Button extends React.Component {
 
         <button id="enter-Link" onClick={async () =>
         await audioScurry.play()}>
-            Play
+            Play Here
         </button>
         </Link>
       )

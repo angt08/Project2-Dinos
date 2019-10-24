@@ -32,18 +32,6 @@ function StoryDiv(props) {
         ))}
         {props.endingGif && <img src={props.endingGif}/>}
 
-
-
-        {/* <div className="choiceTwo">
-          <button onClick=
-            {() => {
-              props.promptTwo(props.choiceTwo, `what's this,a hidden doorway..explore`, `yabadaba dooo`, `rooby doooby dooo`)
-            }}>
-            <p>
-              {props.choiceTwo}
-            </p>
-          </button>
-        </div> */}
       </div>
 
     </div>

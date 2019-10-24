@@ -17,7 +17,7 @@ class App extends React.Component {
       gameData: gameData,
       apiKey: "s30zlBX8MsUXIz2bLRUVC3NXmXujSoJj",
       gifs: [],
-      emotion: ['black and white horror '],
+      emotion: ['black and white scary '],
       endingGif: ''
       // oneGif:'UjYw9fdCEPwU8'
       //a set of emotions to loop through everytime user loads game pg
@@ -65,7 +65,7 @@ class App extends React.Component {
               endingGif={this.state.endingGif}
             />
           )} />
-
+       
        
         <Footer />
 
