@@ -12,10 +12,9 @@ class Button extends React.Component {
 
       return (
         <Link to='/adventure'>
-
-        <button id="enter-Link" onClick={async () =>
+        <button className="enter-button" onClick={async () =>
         await audioScurry.play()}>
-            Play Here
+        Play Here
         </button>
         </Link>
       )

@@ -23,7 +23,7 @@ class Game extends React.Component {
 
     return (
 
-      <div>
+      <>
         {this.state.gameStart ?
           <StoryDiv
             prompt={this.state.prompt}
@@ -36,7 +36,7 @@ class Game extends React.Component {
           </button>
 
         }
-      </div>
+      </>
 
       // .........................
 

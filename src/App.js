@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import Header from './components/Header'
 import { Route } from 'react-router-dom';
 import { gifBackground, getOneGif } from './services/api-helper';
 import Adventure from './components/Adventure';
@@ -23,8 +24,10 @@ class App extends React.Component {
       //a set of emotions to loop through everytime user loads game pg
     }
   }
+
+
   async componentDidMount() {
-   
+
     const gifs = await gifBackground(this.state.apiKey, this.state.emotion)
     // const  oneGif= await getOneGif (this.state.apiKey, this.state.gif_id)
     console.log(gifs)
@@ -36,7 +39,7 @@ class App extends React.Component {
   }
 
   selectedPrompt = async (option) => {
-   
+
     this.setState(prevState => ({
       gameData: prevState.gameData[option]
     }))
@@ -47,26 +50,36 @@ class App extends React.Component {
     //   })
     // }
   }
-  
+
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
 
-        <Route exact path="/" component={Home} />
+         <Route exact path="/" 
+          component={Home} 
+        /> 
 
+      {/* <Route path="/home"
+          render={() =>
+           <Home /> 
+    
+          }
+        />   */}
 
-        <Route path="/adventure/"
+        <Route path="/adventure"
           render={() => (
+                 
             <Adventure
               gameData={this.state.gameData}
               selectedPrompt={this.selectedPrompt}
               gifs={this.state.gifs}
-              endingGif={this.state.endingGif}
+              // endingGif={this.state.endingGif}
             />
-          )} />
-       
-       
+          )}
+        />
+
+
         <Footer />
 
       </div>

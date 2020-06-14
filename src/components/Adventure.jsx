@@ -10,12 +10,11 @@ const Adventure = (props) => {
 
   return (
 
-    <div id="adventure">
+    <>
 
       <header id="adventure-header">
         <Link to='/'>
-          <>Home</>
-          
+          Home 
         </Link>
       </header>
       <Game
@@ -23,9 +22,10 @@ const Adventure = (props) => {
         selectedPrompt={props.selectedPrompt}
         endingGif={props.endingGif}
       />
+
       <GifWall gifs={props.gifs} />
 
-    </div>
+    </>
   )
 }
 export default Adventure;

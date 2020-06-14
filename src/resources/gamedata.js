@@ -4,7 +4,7 @@ const gameData = {
   prompt: `You wake in a study room, peer out a window.
   It's getting dark out there, you don't know where you are.
   You check yourself, you're not in pain, you're dressed for a formal event, what is going on...`,
-  "Stay in this study ?": {
+  "Stay in this study.": {
     
     prompt: "The nightman cometh, you shant be spared, Goodbye...",
   },
@@ -15,12 +15,12 @@ const gameData = {
 
         prompt: "A banquet, sweet!",
       "Let's try this roast mutton": {
-        prompt: "Does this  mutton taste funny to you?..",
+        prompt: "Does this  mutton taste funny to you?",
         
       },
 
       "Drink this wine,from this fine looking chalice": {
-        prompt: " Hey man, I don't think that was wine..",
+        prompt: " Hey, I don't think that was wine.",
         
       },
     },
@@ -30,7 +30,7 @@ const gameData = {
       
     "You're no wimp,fight!...": {
       prompt: `Oh, 
-        What made you think you could take on an unknown beast with no weapons or armor?`,
+        What made you think you could take on an unknown beast with no weapons or armor.`,
       },
       "Nah, run! run so fast!": {
         prompt: `You've run out the house,
